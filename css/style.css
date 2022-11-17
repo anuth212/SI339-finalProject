@@ -1,0 +1,87 @@
+img {
+    width: 400px;
+    height: 300px;
+}
+
+nav li{
+    display: inline;
+    padding: 10px;
+    background-color:lightsteelblue;
+    text-decoration: none;
+    
+}
+
+nav{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+nav a{
+    text-decoration: none;
+    color:black
+}
+
+nav a:visited{
+    text-decoration: none;
+}
+
+.skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  }
+  
+
+  .skip a{
+    position: relative;
+    top: -40px;
+  }
+  /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
+  .skip a:focus{
+    position: relative;
+    top: 5px;
+  }
+
+  p{
+    margin-top: 200px;
+    font-size: 20px;
+  }
+
+  
+
+  #me{
+    width: 400px;
+    height: 380px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height:40%;
+  }
+
+  main{
+    padding-top: 100px;
+  }
+
+  h1{
+    
+    text-align: center;
+  }
+
+  .active{
+    text-decoration: underline;
+    font-size: 20px;
+  }
+
+
+  .images{
+    display: block;
+    margin: auto;
+   
+    
+  }
