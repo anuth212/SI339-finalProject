@@ -3,38 +3,120 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--
+    
 	<link rel="icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="css/html5reset.css">
-	-->
+	
 	<link rel="stylesheet" href="css/style.css">
     
 	<title>Title</title>
 </head>
 <body>
 	<header>
-		<div class="skip"><a href="#text1">Skip to Main Content</a></div>
-	  <nav>
+		<div class="skip"><a href="#text2">Skip to Main Content</a></div>
+	  <nav id ="bigNav">
 		<ul>
             <li class="active"><a href = "main.html">About Me</a></li>
 			<li><a href = "main2.html">Friends and Family</a></li>
 			
 			<li><a href = "main3.html">My Photography</a></li>
 			
+			
 		</ul>
-		</nav>
-		<h1>About Me</h1>
+
+		
+			
+	
+		
+	</nav>
+
+	<!-- The overlay -->
+	<div id="myNav" class="overlay">
+
+	<!-- Button to close the overlay navigation -->
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+	<!-- Overlay content -->
+	<div class="overlay-content">
+	  <a href="main.html">About Me</a>
+	  <a href="main2.html"">Friends and Family</a>
+	  <a href="main3.html">My Photography</a>
+	</div>
+  
+  	</div>
+  <div class = "opener">
 
 
-	</header>
+  <!-- Use any element to open/show the overlay navigation menu -->
+  	<span onclick="openNav()">☰</span>
+</div>
 
-	<main id="text1">
-		<div class ="images">
-			<img id ="me" src = "images/main/profile.JPG" alt ="A profile photo of me">
+
+	
+
+		
+
+</header>
+
+	<main>
+		<div id = "text1">
+			<h1 id = "malay">ഹലോ</h1>
+			
+			<div id = "malay-des">"Hello, in Malayalam"</div>
+			
+			<div id = "fullName">I'm Anu Thomas</div>
+			<div id = "about">I'm Anu</div>
+
+			<div id = "last">Thomas</div>
+
+			
+			<div id = "tag">Computer Science Student,</div>
+			
+			<div id = "tag2">Artist, and Friend</div>
+		</div>
+		
+
+		<div id = "text2">
+			<div id = "bio">
+
+			
+				<div id = "blurb">
+					<p id = "one"> Hello! I am a 20 year old Indian-American college student and I currently go to the University of Michigan.</p>
+					<p id = "two"> I am majoring in Computer Science and am also pursuing a minor in philosphy</p>
+					<p id = "three">In my free time, I enjoy spending time with my family/friends, painting, taking pictures, and so much more</p>
+					
+				</div>
+				<div id = "headshot">
+					<img id ="me" src = "images/main/profile.JPG" alt ="A profile photo of me">
+				</div>
+			</div>
+
 		</div>
 
-		<p>
-			Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam pulvinar euismod dolor, eu aliquam nibh efficitur vel. Phasellus sit amet velit congue, finibus nibh eu, ultricies magna. Donec eu ultrices eros. Donec sit amet metus nisi. Nulla tincidunt justo non risus aliquam, sit amet lacinia lacus commodo. Aliquam ultricies ante sed semper porta. Integer eros tortor, convallis eu ultricies malesuada, fringilla sed libero. Aenean molestie rhoncus leo eu imperdiet. Mauris eget molestie massa. Maecenas auctor sapien a arcu laoreet, et consectetur odio scelerisque. Praesent ac turpis sed neque porttitor finibus faucibus quis tortor. Morbi tempus turpis lacus, nec laoreet tellus rhoncus quis. Aliquam vitae dolor urna. In pellentesque ullamcorper turpis, commodo cursus mauris condimentum eget.
-		</p>
+		<!--
+		<div id = "learn-more">
+			To learn more about me, click a button below
+			<div >
+				<a href = "main2.html"><div class= "buttons">Family and Friends</div></a>
+				<a href = "main3.html"><div class= "buttons">My Photography</div></a>
+				
+			</div>
+			
+		</div>
+		-->
+
+		
 	</main>
+	<script src = "dist/js/overlay.js"></script>
 </body>
+
+<footer>
+	<div id = "footerItems">
+
+			<a href = "https://www.linkedin.com/in/anu-thomas18" target="_blank"><img id = "linked" class = "icon" src = "images/icons/linkedIn.png" alt = "Logo for linkedIn"></a></li>
+			<img  id = "insta" class = "icon" src = "images/icons/insta.png" alt = "Logo for Instagram"></li>
+			<p id = "copyright">
+				Copyright @ 2022 Anu Thomas
+			</p>
+	</div>
+</footer>
